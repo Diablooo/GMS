@@ -1,0 +1,20 @@
+
+sprite_index = spr_ysera_idle  //空闲状态
+if keyboard_check(ord('D')){
+     phy_position_x = phy_position_x+6;
+     sprite_index = spr_ysera_walk_side;
+     image_xscale = -1 ;
+}
+if keyboard_check(ord('A')){
+    phy_position_x = phy_position_x-6;
+    sprite_index = spr_ysera_walk_side;
+    image_xscale = 1 ;
+}
+if keyboard_check(ord('W')){
+    phy_position_y = phy_position_y-6;
+    sprite_index = spr_ysera_walk_back;
+}
+if keyboard_check(ord('S')){
+    phy_position_y = phy_position_y+6;
+    sprite_index = spr_ysera_walk_front;
+}
